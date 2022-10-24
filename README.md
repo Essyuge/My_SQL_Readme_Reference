@@ -1,38 +1,37 @@
 # My_SQL_reference
-##SQL LITE
+## SQL LITE
+## steps with Examples
 
-steps:
+1. sqlite3 pet_database.db
 
-1.sqlite3 pet_database.db
-
-2.CREATE TABLE cats (
+2. CREATE TABLE cats (
   id INTEGER PRIMARY KEY,
   name TEXT,
   age INTEGER
 ); (Its creates a new table)
 
-3.ALTER TABLE cats ADD COLUMN breed TEXT; (it adds a column to the table)
+3. ALTER TABLE cats ADD COLUMN breed TEXT; (it adds a column to the table)
 
-4.DROP TABLE cats;  (it deletes the table)
+4. DROP TABLE cats;  (it deletes the table)
 
-5.INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
+5. INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
 
-6.UPDATE fans
+6. UPDATE fans
 SET artist_id = 160
 WHERE
 name |="essy"
 
-7.DELETE FROM fans WHERE name ="essy'
+7. DELETE FROM fans WHERE name ="essy'
 
 Selecting by Column Names
 
-8.SELECT*FROM cats; -=>this is a special selector, known commonly as the 'wildcard' Selector *.
+8. SELECT*FROM cats; -=>this is a special selector, known commonly as the 'wildcard' Selector *.
 The * selector means: "Give me all the data from all the columns for all of the cats"
 
-9.SELECT name FROM cats;
+9. SELECT name FROM cats;
 To select just certain columns from a table
 
-10.SELECT DISTINCT name FROM cats;
+10. SELECT DISTINCT name FROM cats;
 If you have duplicate data (for example, two cats with the same name) and you only want to select unique values, you can use the DISTINCT keyword.
 
 Selecting based on conditions:The where clause
@@ -47,7 +46,7 @@ UPDATE
 UPDATE cats SET name = "Hana" WHERE name = "Hannah";
 
 DELETE
-14.DELETE FROM [table name] WHERE [column name] = [value];
+14. DELETE FROM [table name] WHERE [column name] = [value];
 DELETE FROM cats WHERE id = 3;
 
 
@@ -61,11 +60,11 @@ database selecting specific artist
 CREATE TABLE, ALTER TABLE,DROP TABLE
 .help,.tables.schema
 
-##SQL QUERY
+## SQL QUERY
 
 The term "query" refers to any SQL statement that retrieves data from your database
 
-1.ORDER BY
+1. ORDER BY
  This modifier allows us to order the table rows returned by a certain SELECT statement.
 SELECT column_name FROM table_name ORDER BY column_name ASC|DESC;
 ie SELECT * FROM cats ORDER BY age;
@@ -77,7 +76,7 @@ SELECT * FROM cats ORDER BY age DESC;
 SELECT * FROM cats ORDER BY age DESC LIMIT 1;
 returns all of the cats in order from oldest to youngest. Setting a LIMIT of 1 returns just the first, i.e. oldest, cat on the list.
 
-3 .BETWEEN
+3. BETWEEN
 SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2;
 SELECT name FROM cats WHERE age BETWEEN 1 AND 3;
 
@@ -118,7 +117,7 @@ SELECT cats.name, dogs.name FROM cats, dogs;
 .width auto      # adjusts and normalizes column width
 .width NUM1, NUM2 # customize column width
 
-##USING AGGREGATE FUNCTIONS
+## USING AGGREGATE FUNCTIONS
 
 AVG, SUM, COUNT, MIN, MAX
 
