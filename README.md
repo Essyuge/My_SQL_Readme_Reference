@@ -4,7 +4,7 @@
 
 ### CREATING A TABLE
 
--  ```sql
+- ```sql
   CREATE TABLE cats (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
   ```
 - Its creates a new table
@@ -13,23 +13,25 @@
 
 - ```sql
    ALTER TABLE cats ADD COLUMN breed TEXT; 
-   ```
+  ```
 - it adds a column to the table
 ### DELETING THE WHOLE TABLE
 
 - ```sql
-   DROP TABLE cats;  (it deletes the table)
-   ```
+   DROP TABLE cats;
+  ```
+- it deletes the table
+   
 ### INSERTING
 
-- ```sql
+-  ```sql
    INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
    ```
 ### UPDATING
 
-- ```sql
-   UPDATE fans
-   SET artist_id = 160
+-  ```sql
+  UPDATE fans
+  SET artist_id = 160
   WHERE
   name |="essy"
   ```
