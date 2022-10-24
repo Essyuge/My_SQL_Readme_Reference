@@ -29,7 +29,7 @@
    ```
 ### UPDATING
 
--  ```sql
+- ```sql
   UPDATE fans
   SET artist_id = 160
   WHERE
