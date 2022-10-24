@@ -2,40 +2,63 @@
 ## SQL LITE
 ## steps with Examples
 
-1. [sqlite3 pet_database.db] [1]
-
-2. [CREATE TABLE cats (
+### CREATING A TABLE
+-  ```sql
+  CREATE TABLE cats (
   id INTEGER PRIMARY KEY,
   name TEXT,
-  age INTEGER
-);] [1]
-#(Its creates a new table)
+  age INTEGER);
+  ```
+- Its creates a new table
 
-3. ALTER TABLE cats ADD COLUMN breed TEXT; (it adds a column to the table)
+### ADDING A COLUMN
 
-4. DROP TABLE cats;  (it deletes the table)
+- ```sql
+   ALTER TABLE cats ADD COLUMN breed TEXT; 
+   ```
+- it adds a column to the table
+### DELETING THE WHOLE TABLE
 
-5. INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
+- ```sql
+   DROP TABLE cats;  (it deletes the table)
+   ```
+### INSERTING
 
-6. UPDATE fans
-SET artist_id = 160
-WHERE
-name |="essy"
+- ```sql
+   INSERT INTO cats (name, age, breed) VALUES ('Maru', 3, 'Scottish Fold');
+   ```
+### UPDATING
 
-7. DELETE FROM fans WHERE name ="essy'
+- ```sql
+   UPDATE fans
+   SET artist_id = 160
+  WHERE
+  name |="essy"
+  ```
+### DELETING
 
-Selecting by Column Names
+- ```sql
+  DELETE FROM fans WHERE name ="essy'
+  ```
 
-8. SELECT*FROM cats; -=>this is a special selector, known commonly as the 'wildcard' Selector *.
-The * selector means: "Give me all the data from all the columns for all of the cats"
+### SELECTING BY COLUMN NAME
 
-9. SELECT name FROM cats;
-To select just certain columns from a table
+-  ```sql
+   SELECT*FROM cats; -=>this is a special selector, known commonly as the 'wildcard' Selector *.
+   ```
+-  The * selector means: "Give me all the data from all the columns for all of the cats"
 
-10. SELECT DISTINCT name FROM cats;
-If you have duplicate data (for example, two cats with the same name) and you only want to select unique values, you can use the DISTINCT keyword.
+- ```sql 
+   SELECT name FROM cats;
+   ```
+-  To select just certain columns from a table
 
-Selecting based on conditions:The where clause
+- ```sql 
+  SELECT DISTINCT name FROM cats;
+  ```
+- If you have duplicate data (for example, two cats with the same name) and you only want to select unique values, you can use the DISTINCT keyword.
+
+### SELECTING BASED ON THE CONDITION:THE WHERE CLAUSE.
 
 11. SELECT * FROM [table name] WHERE [column name] = [some value];
 SELECT * FROM cats WHERE name = "Maru";
