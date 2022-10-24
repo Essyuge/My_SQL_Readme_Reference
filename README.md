@@ -60,29 +60,39 @@
 
 ### SELECTING BASED ON THE CONDITION:THE WHERE CLAUSE.
 
-11. SELECT * FROM [table name] WHERE [column name] = [some value];
-SELECT * FROM cats WHERE name = "Maru";
-12.use comparison ops <> to select specific data
- SELECT * FROM cats WHERE age < 2;
+- ```sql
+  SELECT * FROM [table name] WHERE [column name] = [some value];
+  SELECT * FROM cats WHERE name = "Maru";
+  ```
+- ```sql
+  SELECT * FROM cats WHERE age < 2;
+  ```
+- use comparison ops < > to select specific data
 
-UPDATE
-13. UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];
-UPDATE cats SET name = "Hana" WHERE name = "Hannah";
+### UPDATE
+- ```sql
+   UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];
+   UPDATE cats SET name = "Hana" WHERE name = "Hannah";
+   ```
 
-DELETE
-14. DELETE FROM [table name] WHERE [column name] = [value];
-DELETE FROM cats WHERE id = 3;
+### DELETE
+- ```sql
+  DELETE FROM [table name] WHERE [column name] = [value];
+  ```
+- DELETE FROM cats WHERE id = 3;
 
 
 
 
-database selecting specific artist
-=> SELECT*FROM artists
-=> SELECT* FROM artists WHERE name="essy uge";
-=>  SELECT FROM artists WHERE name LIKE%ess%;
+- database selecting specific artist
+- SELECT*FROM artists
+- SELECT* FROM artists WHERE name="essy uge";
+-  SELECT FROM artists WHERE name LIKE%ess%;
 
-CREATE TABLE, ALTER TABLE,DROP TABLE
-.help,.tables.schema
+- CREATE TABLE, ALTER TABLE,DROP TABLE
+#### .help
+#### .tables
+#### .schema
 
 ## SQL QUERY
 
