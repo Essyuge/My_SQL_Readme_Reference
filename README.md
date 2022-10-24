@@ -2,13 +2,13 @@
 ## SQL LITE
 ## steps with Examples
 
-1. [sqlite3 pet_database.db]
+1. [sqlite3 pet_database.db] [1]
 
 2. [CREATE TABLE cats (
   id INTEGER PRIMARY KEY,
   name TEXT,
   age INTEGER
-);] 
+);] [1]
 #(Its creates a new table)
 
 3. ALTER TABLE cats ADD COLUMN breed TEXT; (it adds a column to the table)
