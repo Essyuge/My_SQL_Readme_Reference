@@ -3,11 +3,9 @@
 ## steps with Examples
 
 ### CREATING A TABLE
+
 -  ```sql
-  CREATE TABLE cats (
-  id INTEGER PRIMARY KEY,
-  name TEXT,
-  age INTEGER);
+  CREATE TABLE cats (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
   ```
 - Its creates a new table
 
